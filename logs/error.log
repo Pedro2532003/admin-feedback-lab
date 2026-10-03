@@ -1,0 +1,8 @@
+[2026-10-02T18:50:15.000Z] [WARNING] WAF blocked payload from 10.10.14.50: <script> tag detected
+[2026-10-02T18:51:55.000Z] [CRITICAL] Dashboard accessed via session replay from 10.10.14.50 - /api/verify-mfa was never reached
+[2026-10-02T18:53:10.000Z] [WARNING] Authentication bypass anomaly
+[2026-10-03T16:14:37.849Z] [WARNING] WAF blocked payload from ::ffff:172.18.0.1: <script> tag detected
+[2026-10-03T16:16:34.027Z] [INFO] Admin completed MFA and established session adm_sess_xfrkj76amy
+[2026-10-03T16:16:34.036Z] [CRITICAL] Dashboard accessed via session replay - /api/verify-mfa was skipped entirely
+[2026-10-03T16:16:34.072Z] [CRITICAL] Exfiltrated cookie received via collector: language=en; welcomebanner_status=dismiss; cookieconsent_status=dismiss; continueCode=WXgZz578w93pbym6rJQAqnf1INSEEha6tbycV1hDvdYMRNxevl1ajOLVKq2P; pre_mfa_session=pending_mfa_verification; adm_sess=adm_sess_xfrkj76amy
+[2026-10-03T16:19:36.725Z] [CRITICAL] Dashboard accessed via session replay - /api/verify-mfa was skipped entirely

@@ -1,0 +1,14 @@
+{
+  "name": "admin-feedback-system",
+  "version": "1.0.0",
+  "description": "Intentionally vulnerable lab app: Cookie Reuse & MFA Bypass",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node scripts/seed-logs.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cookie-parser": "^1.4.6"
+  }
+}

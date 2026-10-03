@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  feedback-app:
+    build: .
+    container_name: admin-feedback-app
+    ports:
+      - "3075:3075"
+    volumes:
+      - ./logs:/opt/admin/logs
+    restart: unless-stopped
+
+  blue-team-ssh:
+    image: linuxserver/openssh-server
+    container_name: blue-team-ssh
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - USER_NAME=analyst
+      - USER_PASSWORD=blue_team_rocks
+      - PASSWORD_ACCESS=true
+    ports:
+      - "2275:2222"
+    volumes:
+      - ./logs:/opt/admin/logs:ro
+    restart: unless-stopped
